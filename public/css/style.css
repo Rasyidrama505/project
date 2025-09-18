@@ -1,0 +1,155 @@
+body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #22313f 0%, #2c3e50 100%);
+            color: #fff;
+            box-shadow: 2px 0 10px rgba(44,62,80,0.1);
+            z-index: 1000;
+        }
+        .sidebar .logo {
+            font-size: 1.7rem;
+            font-weight: bold;
+            padding: 24px 0;
+            text-align: center;
+            background: #22313f;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #34495e;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+            transition: background 0.2s, padding-left 0.2s;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background: #34495e;
+            padding-left: 38px;
+        }
+        .dropdown-toggle::after {
+            font-size: 0.8em;
+        }
+        .dropdown-menu {
+            padding-left: 10px;
+        }
+        .dropdown-item {
+            font-size: 0.98rem;
+            margin-bottom: 2px;
+            transition: background 0.2s;
+        }
+        .dropdown-item:hover {
+            background: #22313f;
+        }
+        .dropdown-menu .dropdown-item {
+            padding-left: 40px;
+            transition: background 0.2s, padding-left 0.2s, color 0.2s;
+        }
+        .dropdown-menu .dropdown-item:hover {
+            background: #22313f !important;
+            padding-left: 60px !important;
+            color: #ffc107 !important;
+        }
+        .sidebar-hover-area {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 100vh;
+            z-index: 999;
+        }
+        .main-content {
+            margin-left: 220px;
+            transition: margin-left 0.3s;
+            min-height: 100vh;
+            background: rgba(255,255,255,0.8);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44,62,80,0.08);
+        }
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .dashboard-header img {
+            width: 48px;
+            height: 48px;
+        }
+        .card-info {
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+            margin-bottom: 24px;
+        }
+        .card-info .card-body {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .card-info .icon {
+            font-size: 2.2rem;
+            color: #34495e;
+        }
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .dashboard-header img {
+            width: 48px;
+            height: 48px;
+        }
+        .chart-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        .chart-col {
+            flex: 1 1 350px;
+            min-width: 320px;
+        }
+        .card {
+            margin-bottom: 0;
+        }
+        @media (max-width: 991px) {
+            .main-content {
+                margin-left: 0 !important;
+            }
+            .sidebar {
+                position: relative;
+                width: 100%;
+                min-height: auto;
+            }
+            .chart-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+        .menu-card {
+            transition: box-shadow 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+        .menu-card:hover {
+            box-shadow: 0 4px 24px rgba(44,62,80,0.12);
+            transform: translateY(-4px) scale(1.03);
+            border-color: #007bff;
+        }
+        .menu-icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 12px;
+        }
