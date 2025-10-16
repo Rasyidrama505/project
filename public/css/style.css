@@ -1,6 +1,7 @@
 body {
             min-height: 100vh;
             background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            font-family: 'Poppins', sans-serif;
         }
         .sidebar {
             position: fixed;
@@ -140,16 +141,81 @@ body {
             }
         }
         .menu-card {
-            transition: box-shadow 0.2s, transform 0.2s;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
             cursor: pointer;
         }
         .menu-card:hover {
-            box-shadow: 0 4px 24px rgba(44,62,80,0.12);
-            transform: translateY(-4px) scale(1.03);
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-color: #007bff;
         }
         .menu-icon {
             font-size: 2.5rem;
             color: #007bff;
             margin-bottom: 12px;
+        }
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card h3 {
+            font-weight: 700; /* Menggunakan versi tebal dari font Poppins */
+        }
+        .table-responsive {
+            max-height: 70vh; /* Membatasi tinggi maksimum kontainer tabel menjadi 70% dari tinggi layar */
+            overflow: auto;   /* Menambahkan scrollbar vertikal & horizontal jika konten melebihi ukuran */
+        }
+        .summary-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            overflow: hidden;
+        }
+        .summary-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .summary-card .card-body {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+        }
+        .summary-card .icon-circle {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            background-color: #e9f5ff;
+        }
+        .summary-card .icon-circle i {
+            font-size: 26px;
+            color: #3b82f6;
+        }
+        .summary-card .info .h3 {
+            margin-bottom: 2px;
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        .summary-card .info p {
+            margin-bottom: 0;
+            font-size: 1rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        .sub-indicator {
+            padding-left: 2rem !important;
+            font-size: 0.95em;
+        }
+        .total-indicator {
+            font-weight: bold;
+            background-color: #f8f9fa;
         }
