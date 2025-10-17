@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 18, 2025 at 01:09 AM
+-- Generation Time: Oct 17, 2025 at 01:43 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.16
 
@@ -20,6 +20,121 @@ SET time_zone = "+00:00";
 --
 -- Database: `data_sekolah`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dis21`
+--
+
+CREATE TABLE `dis21` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `kabupaten_kota` varchar(50) DEFAULT NULL,
+  `kecamatan` varchar(50) DEFAULT NULL,
+  `kelurahan` varchar(50) DEFAULT NULL,
+  `email` varchar(512) DEFAULT NULL,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL,
+  `jml_rombel_tkt_x` int DEFAULT NULL,
+  `jml_rombel_tkt_xi` int DEFAULT NULL,
+  `jml_rombel_tkt_xii` int DEFAULT NULL,
+  `jml_rombel_tkt_xiii` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dis22`
+--
+
+CREATE TABLE `dis22` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `kabupaten_kota` varchar(50) DEFAULT NULL,
+  `kecamatan` varchar(50) DEFAULT NULL,
+  `kelurahan` varchar(50) DEFAULT NULL,
+  `email` varchar(512) DEFAULT NULL,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL,
+  `jml_rombel_tkt_x` int DEFAULT NULL,
+  `jml_rombel_tkt_xi` int DEFAULT NULL,
+  `jml_rombel_tkt_xii` int DEFAULT NULL,
+  `jml_rombel_tkt_xiii` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dis23`
+--
+
+CREATE TABLE `dis23` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `kabupaten_kota` varchar(50) DEFAULT NULL,
+  `kecamatan` varchar(50) DEFAULT NULL,
+  `kelurahan` varchar(50) DEFAULT NULL,
+  `email` varchar(512) DEFAULT NULL,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL,
+  `jml_rombel_tkt_x` int DEFAULT NULL,
+  `jml_rombel_tkt_xi` int DEFAULT NULL,
+  `jml_rombel_tkt_xii` int DEFAULT NULL,
+  `jml_rombel_tkt_xiii` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dis24`
+--
+
+CREATE TABLE `dis24` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `kabupaten_kota` varchar(50) DEFAULT NULL,
+  `kecamatan` varchar(50) DEFAULT NULL,
+  `kelurahan` varchar(50) DEFAULT NULL,
+  `email` varchar(512) DEFAULT NULL,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL,
+  `jml_rombel_tkt_x` int DEFAULT NULL,
+  `jml_rombel_tkt_xi` int DEFAULT NULL,
+  `jml_rombel_tkt_xii` int DEFAULT NULL,
+  `jml_rombel_tkt_xiii` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dis25`
+--
+
+CREATE TABLE `dis25` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `kabupaten_kota` varchar(50) DEFAULT NULL,
+  `kecamatan` varchar(50) DEFAULT NULL,
+  `kelurahan` varchar(50) DEFAULT NULL,
+  `email` varchar(512) DEFAULT NULL,
+  `no_telp` varchar(50) DEFAULT NULL,
+  `akreditasi` varchar(50) DEFAULT NULL,
+  `jml_rombel_tkt_x` int DEFAULT NULL,
+  `jml_rombel_tkt_xi` int DEFAULT NULL,
+  `jml_rombel_tkt_xii` int DEFAULT NULL,
+  `jml_rombel_tkt_xiii` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -628,6 +743,126 @@ INSERT INTO `dis_smk` (`npsn`, `nama_sekolah`, `jenjang`, `status`, `kabupaten_k
 ('20404184', 'SMKS TAMANSISWA JETIS', 'SMK', 'Swasta', 'Yogyakarta', 'Jetis', '-', '-', '-', '1', 6, 5, 6, 0),
 ('20403283', 'SMK NEGERI 5 YOGYAKARTA', 'SMK', 'Negeri', 'Yogyakarta', 'Umbulharjo', '-', '-', '-', '1', 14, 14, 14, 0),
 ('20403309', 'SMK PERINDUSTRIAN YOGYAKARTA', 'SMK', 'Swasta', 'Yogyakarta', 'Gondokusuman', '-', '-', '-', '1', 3, 3, 3, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drm21`
+--
+
+CREATE TABLE `drm21` (
+  `npsn` varchar(512) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `siswa_tkt_x_l` int DEFAULT NULL,
+  `siswa_tkt_x_p` int DEFAULT NULL,
+  `siswa_tkt_xi_l` int DEFAULT NULL,
+  `siswa_tkt_xi_p` int DEFAULT NULL,
+  `siswa_tkt_xii_l` int DEFAULT NULL,
+  `siswa_tkt_xii_p` int DEFAULT NULL,
+  `siswa_tkt_xiii_l` int DEFAULT NULL,
+  `siswa_tkt_xiii_p` int DEFAULT NULL,
+  `siswa_penerima_kip` int DEFAULT NULL,
+  `siswa_dari_dalam_kab` int DEFAULT NULL,
+  `siswa_dari_luar_kab` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drm22`
+--
+
+CREATE TABLE `drm22` (
+  `npsn` varchar(512) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `siswa_tkt_x_l` int DEFAULT NULL,
+  `siswa_tkt_x_p` int DEFAULT NULL,
+  `siswa_tkt_xi_l` int DEFAULT NULL,
+  `siswa_tkt_xi_p` int DEFAULT NULL,
+  `siswa_tkt_xii_l` int DEFAULT NULL,
+  `siswa_tkt_xii_p` int DEFAULT NULL,
+  `siswa_tkt_xiii_l` int DEFAULT NULL,
+  `siswa_tkt_xiii_p` int DEFAULT NULL,
+  `siswa_penerima_kip` int DEFAULT NULL,
+  `siswa_dari_dalam_kab` int DEFAULT NULL,
+  `siswa_dari_luar_kab` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drm23`
+--
+
+CREATE TABLE `drm23` (
+  `npsn` varchar(512) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `siswa_tkt_x_l` int DEFAULT NULL,
+  `siswa_tkt_x_p` int DEFAULT NULL,
+  `siswa_tkt_xi_l` int DEFAULT NULL,
+  `siswa_tkt_xi_p` int DEFAULT NULL,
+  `siswa_tkt_xii_l` int DEFAULT NULL,
+  `siswa_tkt_xii_p` int DEFAULT NULL,
+  `siswa_tkt_xiii_l` int DEFAULT NULL,
+  `siswa_tkt_xiii_p` int DEFAULT NULL,
+  `siswa_penerima_kip` int DEFAULT NULL,
+  `siswa_dari_dalam_kab` int DEFAULT NULL,
+  `siswa_dari_luar_kab` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drm24`
+--
+
+CREATE TABLE `drm24` (
+  `npsn` varchar(512) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `siswa_tkt_x_l` int DEFAULT NULL,
+  `siswa_tkt_x_p` int DEFAULT NULL,
+  `siswa_tkt_xi_l` int DEFAULT NULL,
+  `siswa_tkt_xi_p` int DEFAULT NULL,
+  `siswa_tkt_xii_l` int DEFAULT NULL,
+  `siswa_tkt_xii_p` int DEFAULT NULL,
+  `siswa_tkt_xiii_l` int DEFAULT NULL,
+  `siswa_tkt_xiii_p` int DEFAULT NULL,
+  `siswa_penerima_kip` int DEFAULT NULL,
+  `siswa_dari_dalam_kab` int DEFAULT NULL,
+  `siswa_dari_luar_kab` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `drm25`
+--
+
+CREATE TABLE `drm25` (
+  `npsn` varchar(512) DEFAULT NULL,
+  `nama_sekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `siswa_tkt_x_l` int DEFAULT NULL,
+  `siswa_tkt_x_p` int DEFAULT NULL,
+  `siswa_tkt_xi_l` int DEFAULT NULL,
+  `siswa_tkt_xi_p` int DEFAULT NULL,
+  `siswa_tkt_xii_l` int DEFAULT NULL,
+  `siswa_tkt_xii_p` int DEFAULT NULL,
+  `siswa_tkt_xiii_l` int DEFAULT NULL,
+  `siswa_tkt_xiii_p` int DEFAULT NULL,
+  `siswa_penerima_kip` int DEFAULT NULL,
+  `siswa_dari_dalam_kab` int DEFAULT NULL,
+  `siswa_dari_luar_kab` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -1244,6 +1479,111 @@ INSERT INTO `drm_smk` (`npsn`, `namasekolah`, `jenjang`, `status`, `siswa_tkt_x_
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `gtk21`
+--
+
+CREATE TABLE `gtk21` (
+  `npsn` int DEFAULT NULL,
+  `namasekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `guru_pns` int DEFAULT NULL,
+  `guru_gty` int DEFAULT NULL,
+  `guru_gtt` int DEFAULT NULL,
+  `guru_p3k` int DEFAULT NULL,
+  `guru_s1_s3` int DEFAULT NULL,
+  `guru_s1_lebih` int DEFAULT NULL,
+  `guru_sertifikasi` int DEFAULT NULL,
+  `guru_belum_sertifikasi` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gtk22`
+--
+
+CREATE TABLE `gtk22` (
+  `npsn` int DEFAULT NULL,
+  `namasekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `guru_pns` int DEFAULT NULL,
+  `guru_gty` int DEFAULT NULL,
+  `guru_gtt` int DEFAULT NULL,
+  `guru_p3k` int DEFAULT NULL,
+  `guru_s1_s3` int DEFAULT NULL,
+  `guru_s1_lebih` int DEFAULT NULL,
+  `guru_sertifikasi` int DEFAULT NULL,
+  `guru_belum_sertifikasi` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gtk23`
+--
+
+CREATE TABLE `gtk23` (
+  `npsn` int DEFAULT NULL,
+  `namasekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `guru_pns` int DEFAULT NULL,
+  `guru_gty` int DEFAULT NULL,
+  `guru_gtt` int DEFAULT NULL,
+  `guru_p3k` int DEFAULT NULL,
+  `guru_s1_s3` int DEFAULT NULL,
+  `guru_s1_lebih` int DEFAULT NULL,
+  `guru_sertifikasi` int DEFAULT NULL,
+  `guru_belum_sertifikasi` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gtk24`
+--
+
+CREATE TABLE `gtk24` (
+  `npsn` int DEFAULT NULL,
+  `namasekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `guru_pns` int DEFAULT NULL,
+  `guru_gty` int DEFAULT NULL,
+  `guru_gtt` int DEFAULT NULL,
+  `guru_p3k` int DEFAULT NULL,
+  `guru_s1_s3` int DEFAULT NULL,
+  `guru_s1_lebih` int DEFAULT NULL,
+  `guru_sertifikasi` int DEFAULT NULL,
+  `guru_belum_sertifikasi` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gtk25`
+--
+
+CREATE TABLE `gtk25` (
+  `npsn` int DEFAULT NULL,
+  `namasekolah` varchar(512) DEFAULT NULL,
+  `jenjang` varchar(512) DEFAULT NULL,
+  `status` varchar(512) DEFAULT NULL,
+  `guru_pns` int DEFAULT NULL,
+  `guru_gty` int DEFAULT NULL,
+  `guru_gtt` int DEFAULT NULL,
+  `guru_p3k` int DEFAULT NULL,
+  `guru_s1_s3` int DEFAULT NULL,
+  `guru_s1_lebih` int DEFAULT NULL,
+  `guru_sertifikasi` int DEFAULT NULL,
+  `guru_belum_sertifikasi` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gtk_slb`
 --
 
@@ -1854,6 +2194,231 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sarpras21`
+--
+
+CREATE TABLE `sarpras21` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `namasekolah` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `r_kls_baik` int DEFAULT NULL,
+  `r_kls_rusak_ringan` int DEFAULT NULL,
+  `r_kls_rusak_sedang` int DEFAULT NULL,
+  `r_kls_rusak_berat` int DEFAULT NULL,
+  `perpustakaan_baik` int DEFAULT NULL,
+  `perpustakaan_rusak_ringan` int DEFAULT NULL,
+  `perpustakaan_rusak_sedang` int DEFAULT NULL,
+  `perpustakaan_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_pria_baik` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_wanita_baik` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_pria_baik` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_wanita_baik` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_berat` int DEFAULT NULL,
+  `r_uks_baik` int DEFAULT NULL,
+  `r_uks_rusak_ringan` int DEFAULT NULL,
+  `r_uks_rusak_berat` int DEFAULT NULL,
+  `lab_komputer_baik` int DEFAULT NULL,
+  `lab_komputer_rusak_ringan` int DEFAULT NULL,
+  `lab_komputer_rusak_sedang` int DEFAULT NULL,
+  `lab_komputer_rusak_berat` int DEFAULT NULL,
+  `unit_komputer` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sarpras22`
+--
+
+CREATE TABLE `sarpras22` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `namasekolah` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `r_kls_baik` int DEFAULT NULL,
+  `r_kls_rusak_ringan` int DEFAULT NULL,
+  `r_kls_rusak_sedang` int DEFAULT NULL,
+  `r_kls_rusak_berat` int DEFAULT NULL,
+  `perpustakaan_baik` int DEFAULT NULL,
+  `perpustakaan_rusak_ringan` int DEFAULT NULL,
+  `perpustakaan_rusak_sedang` int DEFAULT NULL,
+  `perpustakaan_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_pria_baik` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_wanita_baik` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_pria_baik` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_wanita_baik` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_berat` int DEFAULT NULL,
+  `r_uks_baik` int DEFAULT NULL,
+  `r_uks_rusak_ringan` int DEFAULT NULL,
+  `r_uks_rusak_berat` int DEFAULT NULL,
+  `lab_komputer_baik` int DEFAULT NULL,
+  `lab_komputer_rusak_ringan` int DEFAULT NULL,
+  `lab_komputer_rusak_sedang` int DEFAULT NULL,
+  `lab_komputer_rusak_berat` int DEFAULT NULL,
+  `unit_komputer` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sarpras23`
+--
+
+CREATE TABLE `sarpras23` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `namasekolah` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `r_kls_baik` int DEFAULT NULL,
+  `r_kls_rusak_ringan` int DEFAULT NULL,
+  `r_kls_rusak_sedang` int DEFAULT NULL,
+  `r_kls_rusak_berat` int DEFAULT NULL,
+  `perpustakaan_baik` int DEFAULT NULL,
+  `perpustakaan_rusak_ringan` int DEFAULT NULL,
+  `perpustakaan_rusak_sedang` int DEFAULT NULL,
+  `perpustakaan_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_pria_baik` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_wanita_baik` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_pria_baik` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_wanita_baik` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_berat` int DEFAULT NULL,
+  `r_uks_baik` int DEFAULT NULL,
+  `r_uks_rusak_ringan` int DEFAULT NULL,
+  `r_uks_rusak_berat` int DEFAULT NULL,
+  `lab_komputer_baik` int DEFAULT NULL,
+  `lab_komputer_rusak_ringan` int DEFAULT NULL,
+  `lab_komputer_rusak_sedang` int DEFAULT NULL,
+  `lab_komputer_rusak_berat` int DEFAULT NULL,
+  `unit_komputer` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sarpras24`
+--
+
+CREATE TABLE `sarpras24` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `namasekolah` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `r_kls_baik` int DEFAULT NULL,
+  `r_kls_rusak_ringan` int DEFAULT NULL,
+  `r_kls_rusak_sedang` int DEFAULT NULL,
+  `r_kls_rusak_berat` int DEFAULT NULL,
+  `perpustakaan_baik` int DEFAULT NULL,
+  `perpustakaan_rusak_ringan` int DEFAULT NULL,
+  `perpustakaan_rusak_sedang` int DEFAULT NULL,
+  `perpustakaan_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_pria_baik` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_wanita_baik` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_pria_baik` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_wanita_baik` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_berat` int DEFAULT NULL,
+  `r_uks_baik` int DEFAULT NULL,
+  `r_uks_rusak_ringan` int DEFAULT NULL,
+  `r_uks_rusak_berat` int DEFAULT NULL,
+  `lab_komputer_baik` int DEFAULT NULL,
+  `lab_komputer_rusak_ringan` int DEFAULT NULL,
+  `lab_komputer_rusak_sedang` int DEFAULT NULL,
+  `lab_komputer_rusak_berat` int DEFAULT NULL,
+  `unit_komputer` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sarpras25`
+--
+
+CREATE TABLE `sarpras25` (
+  `npsn` varchar(50) DEFAULT NULL,
+  `namasekolah` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(50) DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL,
+  `r_kls_baik` int DEFAULT NULL,
+  `r_kls_rusak_ringan` int DEFAULT NULL,
+  `r_kls_rusak_sedang` int DEFAULT NULL,
+  `r_kls_rusak_berat` int DEFAULT NULL,
+  `perpustakaan_baik` int DEFAULT NULL,
+  `perpustakaan_rusak_ringan` int DEFAULT NULL,
+  `perpustakaan_rusak_sedang` int DEFAULT NULL,
+  `perpustakaan_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_pria_baik` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_guru_wanita_baik` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_guru_wanita_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_pria_baik` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_pria_rusak_berat` int DEFAULT NULL,
+  `toilet_murid_wanita_baik` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_ringan` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_sedang` int DEFAULT NULL,
+  `toilet_murid_wanita_rusak_berat` int DEFAULT NULL,
+  `r_uks_baik` int DEFAULT NULL,
+  `r_uks_rusak_ringan` int DEFAULT NULL,
+  `r_uks_rusak_berat` int DEFAULT NULL,
+  `lab_komputer_baik` int DEFAULT NULL,
+  `lab_komputer_rusak_ringan` int DEFAULT NULL,
+  `lab_komputer_rusak_sedang` int DEFAULT NULL,
+  `lab_komputer_rusak_berat` int DEFAULT NULL,
+  `unit_komputer` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -2546,7 +3111,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(1, 'rasyidramadhan33@gmail.com', '$2y$12$2/2azI/BvrYus0uKaznFjuAfRp0WyT5nNOqmMjuhqaBWIc6UKK4h2');
+(1, 'rasyidramadhan33@gmail.com', '$2y$12$2/2azI/BvrYus0uKaznFjuAfRp0WyT5nNOqmMjuhqaBWIc6UKK4h2'),
+(2, 'admin@gmail.com', '$2y$12$2cSggmoMm5fU8V0G7eOIgOe9tHJHg9uBqVON3cpp7OpIcc6p2zqR2');
 
 --
 -- Indexes for dumped tables
@@ -2579,7 +3145,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
